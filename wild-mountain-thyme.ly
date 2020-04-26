@@ -139,7 +139,7 @@ bassVerse = \lyricmode {
   \markup{\italic hm,} __ _
   \markup{\italic hm,} __ _
   \markup{\italic hm,} __ 
-  \markup{\italic hm,} __ _
+  \markup{\italic hm;} __ _
   Will you go, O las -- sie, will you go?
 }
 
@@ -148,26 +148,34 @@ bassVerse = \lyricmode {
     \new Staff \with {
       midiInstrument = "choir aahs"
       instrumentName = \markup{\caps{"Soprano"}}
+      shortInstrumentName = #"S."
     } { \soprano }
     \addlyrics { \sopranoVerse }
     \new Staff \with {
       midiInstrument = "choir aahs"
       instrumentName = \markup{\caps{"Alto"}}
+      shortInstrumentName = #"A."
     } { \alto }
     \addlyrics { \altoVerse }
     \new Staff \with {
       midiInstrument = "choir aahs"
       instrumentName = \markup{\caps{"Tenor"}}
+      shortInstrumentName = #"T."
     } { \clef "treble_8" \tenor }
     \addlyrics { \tenorVerse }
     \new Staff \with {
       midiInstrument = "choir aahs"
       instrumentName = \markup{\caps{"Bass"}}
+      shortInstrumentName = #"B."
     } { \clef bass \bass }
     \addlyrics { \bassVerse }
   >>
   \layout { 
-     #(layout-set-staff-size 16)
+    \context {
+      \RemoveEmptyStaffContext 
+    }
+     #(layout-set-staff-size 14)
+     \override LyricText.self-alignment-X = #CENTER
   }
   \midi {
     \tempo 4=60
