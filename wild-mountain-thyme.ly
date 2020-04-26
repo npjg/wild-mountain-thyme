@@ -50,17 +50,46 @@ tenor = \relative c' {
   a2. | g2 a4 | bes2 a4 | f8 bes8~ bes2 | 
   \breathe r4 f d4 | c2 e4 | f8 bes8~ bes2~ |
   bes2.~ | bes2 a4 \bar "||"
+  
+  << { r4 c, d | f2 f4 | f2 g4 | a8 a8~ a2 |
+       r4 a c | d2 c4 | d2 c4 | a4 c2 | 
+       r4 a4 cis4 | d2 e4 | c2~ c8 a8 | g4 f2 | 
+       r4 g4 a4 | bes2 a4 | g2 f4 | d8 f8~ f2 |
+       r2. | r2. | g'8 f8~ f2~ | f2. | f2. 
+     } \\
+     { r4 c, d | f2 f4 | f2 g4 | a8 a8~ a2 |
+       r4 a c | d2 c4 | d2 c4 | a4 c2 |
+       r4 a4 a4 | a2. | c2~ c8 a8 | g4 f2 | 
+       r4 g4 a4 | g2 f4 | ees2 f4 | d8 f8 ~f2 |
+       r2. | r2. | des'8 des8~ des2~ | des2. | d2. |
+     } 
+  >>
+  
 }
 
 bass = \relative c {
   \global
-  % Music follows here.
   \partial 4 r4 | r2. | bes'4 a g | f2.~ | f2. |
   g2~ g8 a8 | bes2. | c2 c,4 | d2~ d8 a8 | 
   <bes f'>2. | <a e'>2~ <a e'>8 a8 | bes8 d~ d2 |
   d2.~ | d2.~ | d2. | bes8 d8~ d2 
   \breathe r4 f d4 | c2 a4 |  bes8 d8~ d2 |
   d2~ d8 e8 | f2. \bar "||"
+  
+  << { r4 c d | f2 e4 | d2 c4 | f8 f8~ f2 | 
+       r4 a4 a4 | a2 a4 | a2 a4 | e4 a2 | 
+       r4 a4 g4 | f2. | e2. | g4 f2 | 
+       r2. | ees2. | ees2. | bes8 d8~ d2 | 
+       r4 f d | des8 f8~ f2 | bes8 bes8~ bes2~ | bes2. | a2.
+     } \\ 
+     { r4 c, d | f2 e4 | d2 c4 | c2 e4 | 
+       d4 r4 e8 g8 | f2 e4 | f2 e4 | c4 e4 f4 | 
+       g4 a4 e4 | f2 e4 | c2~ c8 a8 | bes4 d2 | 
+       r2. | bes2. | bes2. | bes8 d8~ d2 | 
+       r4 f d | des8 f8~ f2~ | f2 g4 | a4 g4 f4 | f2. | 
+     } 
+  >>
+
 }
 
 sopranoVerse = \lyricmode {
