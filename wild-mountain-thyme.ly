@@ -1,16 +1,25 @@
 \version "2.19.84"
 
-%\header {
-%  dedication = \markup{\italic "to Emma."}
-%  title = "Wild mountain thyme."
-%  composer = "Irish folk song."
-%  arranger = "N.G."
-%  poet = "Robert Tannahill."
-%}
+\paper {
+  top-system-spacing.basic-distance = #10
+  score-system-spacing.basic-distance = #20
+  system-system-spacing.basic-distance = #20
+  last-bottom-spacing.basic-distance = #10
+}
+
+\header {
+  %dedication = \markup{\italic "to Emma."}
+  title = \markup{\caps{"Wild mountain thyme."}}
+  composer = "Irish folk song."
+  arranger = "arr. N.G."
+  poet = "Robert Tannahill."
+  tagline = ##f
+}
 
 global = {
   \key f \major
   \time 3/4
+  \tempo "Pensively"
 }
 
 soprano = \relative c'' {
@@ -104,26 +113,28 @@ bassVerse = \lyricmode {
   \new ChoirStaff <<
     \new Staff \with {
       midiInstrument = "choir aahs"
-      instrumentName = "Soprano"
+      instrumentName = \markup{\caps{"Soprano"}}
     } { \soprano }
     \addlyrics { \sopranoVerse }
     \new Staff \with {
       midiInstrument = "choir aahs"
-      instrumentName = "Alto"
+      instrumentName = \markup{\caps{"Alto"}}
     } { \alto }
     \addlyrics { \altoVerse }
     \new Staff \with {
       midiInstrument = "choir aahs"
-      instrumentName = "Tenor"
+      instrumentName = \markup{\caps{"Tenor"}}
     } { \clef "treble_8" \tenor }
     \addlyrics { \tenorVerse }
     \new Staff \with {
       midiInstrument = "choir aahs"
-      instrumentName = "Bass"
+      instrumentName = \markup{\caps{"Bass"}}
     } { \clef bass \bass }
     \addlyrics { \bassVerse }
   >>
-  \layout { }
+  \layout { 
+     #(layout-set-staff-size 16)
+  }
   \midi {
     \tempo 4=60
   }
