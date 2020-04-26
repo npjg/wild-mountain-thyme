@@ -79,14 +79,14 @@ bass = \relative c {
   
   << { r4 c d | f2 e4 | d2 c4 | f8 f8~ f2 | 
        r4 a4 a4 | a2 a4 | a2 a4 | e4 a2 | 
-       r4 a4 g4 | f2 f4 | e2. | g4 f2 | 
-       R2. | ees2. | ees2. | bes8 d8~ d2 | 
+       r4 a4 g4 | f2 f4 | e4~ e2 | g4 f2 | 
+       r4 g4 a4 | ees2. | ees2. | bes8 d8~ d2 | 
        r4 f d | des8 f8~ f2 | bes8 bes8~ bes2~ | bes2. | a2.
      } \\ 
      { r4 c, d | f2 e4 | d2 c4 | c2 e4 | 
        d4 r4 e8 g8 | f2 e4 | f2 e4 | c4 e4 f4 |
        g4 a4 e4 | f2 e4 | c4 a2 | bes4 d2 | 
-       R2. | bes2. | bes2. | bes8 d8~ d2 | 
+       r4 g4 a4 | bes,2. | bes2. | bes8 d8~ d2 | 
        r4 f d | des8 f8~ f2~ | f2 g4 | a4 g4 f4 | f2. | 
      } 
   >> \bar "||"
@@ -127,6 +127,13 @@ tenorVerse = \lyricmode {
   \markup{\italic hm,} __ _ _ _
   \markup{\italic hm;} __ _
   Will you go, O las -- sie, __ go?
+   
+  I will make my love a bow -- er _
+  By yon clear and cry -- stal foun -- tain,
+  And _ on it I _ will scat -- ter
+  All the flow -- ers of the moun -- tain; _
+  Las -- sie, __ _ _ go?
+  
 }
 
 bassVerse = \lyricmode {
@@ -140,6 +147,13 @@ bassVerse = \lyricmode {
   \markup{\italic hm,} __ 
   \markup{\italic hm;} __ _
   Will you go, O las -- sie, will you go?
+  
+  I will make my love a bow -- er __ _ _ _
+  By yon _ clear and crys -- tal foun -- tain __ _ _
+  And _ on it I'll __ _ scat -- ter
+  All the flow -- ers, moun -- tain; _
+  Will you go? __ _ _ _ _ _
+  O will _ you go?
 }
 
 \score {
