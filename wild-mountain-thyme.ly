@@ -229,10 +229,18 @@ bassVerse = \lyricmode {
     \addlyrics { \bassVerse }
   >>
   \layout { 
+    \context { \RemoveEmptyStaffContext }
     \context {
-      \RemoveEmptyStaffContext 
+      \Score
+      \remove "Mark_engraver"
+      \remove "Staff_collecting_engraver"
     }
-     #(layout-set-staff-size 14)
+    \context {
+      \Staff
+      \consists "Mark_engraver"
+      \consists "Staff_collecting_engraver"
+    }
+     #(layout-set-staff-size 17)
      \override LyricText.self-alignment-X = #CENTER
   }
   \midi {
