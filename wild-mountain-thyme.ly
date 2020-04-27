@@ -27,9 +27,15 @@ soprano = \relative c'' {
   \partial 4 c,8 d | f f~ f2 | f2~ f8 f | f8 f8~ f2 |
   r4 a c | d2 c4 | d2 c4 | a8 c8~ c2 |
   r4 r8 a8 c4 | d2. | c2~ c8 a8 | g8 f8~ f2 | 
-  r4 g4 a4 | bes2 a4 | g2 f4 | d8 f8~ f2 | 
-  \breathe r4 f d4 | c2 c4 | d8  f8~ f2~ | 
+  r4 \mark \markup { \italic { poco accel. } } g4 a4 | bes2 a4 | g2 f4 | d8 f8~ f2 | 
+  \breathe r4 \mark \markup { \italic { a tempo } } f d4 | c2 c4 | d8  f8~ f2~ | 
   f2 g4 | f2. \bar "||" \break R2.*21 \break
+
+  r2 a8 c | \tempo Jubilantly d2. | d2~ d8 c | a8 c8~ c2~ | 
+  c4 a c | d2. | c2 a4 |  %d~ d8 e8 d c | a4 a8 c a g | g f~ f2 |  
+  g8 f8~ f2 | r4 g a | a4~ a8 bes8~ bes4 | g4~ g8 a8 g8 f8 | 
+  d8 f8~ f2~ | f2.~ | f2. | r4 f4 d | c2 a8 c8 | d8 f4 g4~ g8 |
+  f2.
 }
 
 alto = \relative c' {
@@ -37,10 +43,15 @@ alto = \relative c' {
   \partial 4 c4 | c2 e4 | d2. | d2 e4 | 
   d2~ d8 f8~ | f2. | f2. | f2.~ | 
   f4 e2 | f4 e4 d4 | e4 d4 c4 | d2 e4 |
-  d2. | d2.~ | d2. | r4 a8 bes c4 | 
+  d2. | d2.~ | d2. | r4 r8 a8 bes c8 | 
   \breathe r4 f d4 | c2 c4 | d8 f8~ f4 e4 | 
-  d c2 | c2. \bar "||" \break R2.*21 \break
+  d c2 | c2. R2.*21
   
+  r2 a'8 c | d2. | d2~ d8 g,8 | a8 c8~ c2~ | 
+  c4 a a | bes2. | a2 f4 | d2. |
+  r4 g a | a4~ a8 bes8~ bes4 | g4~ g8 a8 d,4 | 
+  d8 f8~ f2~ | f2. | bes,8 c8~ c2 |
+  r4 f4 d | c2 a8 c8 | d8 f4 g4~ g8 | f2.
 }
 
 tenor = \relative c' {
@@ -50,21 +61,29 @@ tenor = \relative c' {
   d4 c4 bes4 | c4 b4 a4 | f2 g4 | 
   a2. | g2 a4 | bes2 a4 | f8 bes8~ bes2 | 
   \breathe r4 f d4 | c2 e4 | f8 bes8~ bes2~ |
-  bes2.~ | bes2 a4 \bar "||"
+  bes2.~ | bes2 a4
   
+  \tempo "Più mosso"
   << { r4 c, d | f2 f4 | f2 g4 | a8 a8~ a2 |
        r4 a c | d2 c4 | d2 c4 | a4 c2 |
        r4 a4 cis4 | d2 e4 | c2~ c8 a8 | g4 f2 |
-       r4 g4 a4 | bes2 a4 | g2 f4 | d8 f8~ f2 |
-       R2. | R2. | g'8 f8~ f2~ | f2. | f2. 
+       r4 g4 a4 | bes2 a4 | g2 f4 | d8 f8~ f2 \breathe |
+       R2. | R2. | g'8 f8~ f2~ | f2. | f2.~ | f2. 
+       r4 d,4 f' | f2. | f8 f8~ f2~ |
+       f4 a4 f4 | f2. | e2 c4 | bes8 a8~ a2 |
+       r2 a4 | d2. | d2 bes4 | f8 f8~ f2 | d8 f8~ f2~ | f2. 
      } \\
-     { r4 c, d | f2 f4 | f2 g4 | a8 a8~ a2 |
+     { r4 c d | f2 f4 | f2 g4 | a8 a8~ a2 |
        r4 a c | d2 c4 | d2 c4 | a4 c2 |
        r4 a4 a4 | a2 a4 | c2~ c8 a8 | g4 f2 | 
        r4 g4 a4 | g2 f4 | ees2 f4 | d8 f8 ~f2 |
-       R2. | R2. | des'8 des8~ des2~ | des2. | d2. |
+       R2. | R2. | des'8 des8~ des2~ | des2. | d2.~ | d2.
+       r4 d,4 f' | e d~ d8 c | a8 c8~ c2~ | 
+       c4 a'4 f4 | f2. | e2 c4 | bes8 a8~ a2 |
+       r2 a4 | bes4 c d | d2 bes4 | f8 f8~ f2 | d8 f8~ f2~ | f2. 
+       r4 f'4 d | c2 a8 c8 | d8 f4 g4~ g8 | f2.
      } 
-  >> \bar "||"
+  >> 
   
 }
 
@@ -80,17 +99,21 @@ bass = \relative c {
   << { r4 c d | f2 e4 | d2 c4 | f8 f8~ f2 | 
        r4 a4 a4 | a2 a4 | a2 a4 | e4 a2 | 
        r4 a4 g4 | f2 f4 | e4~ e2 | g4 f2 | 
-       r4 g4 a4 | ees2. | ees2. | bes8 d8~ d2 | 
-       r4 f d | des8 f8~ f2 | bes8 bes8~ bes2~ | bes2. | a2.
+       r4 g4 a4 | ees2. | ees2. | bes8 d8~ d2 \breathe | 
+       r4 f d | des8 f8~ f2 | bes8 bes8~ bes2~ | bes2. | a2.~ | a2.
      } \\ 
      { r4 c, d | f2 e4 | d2 c4 | c2 e4 | 
        d4 r4 e8 g8 | f2 e4 | f2 e4 | c4 e4 f4 |
        g4 a4 e4 | f2 e4 | c4 a2 | bes4 d2 | 
        r4 g4 a4 | bes,2. | bes2. | bes8 d8~ d2 | 
-       r4 f d | des8 f8~ f2~ | f2 g4 | a4 g4 f4 | f2. | 
+       r4 f d | des8 f8~ f2~ | f2 g4 | a4 g4 f4 | f2.~ | f2. 
      } 
   >> \bar "||"
-
+  r4 d4 d4 | d2~ d8 e8 | f4 g4 a4~ | 
+  a4 a4 e'4 | d2. | c2 a4 | g8 f8~ f2 | r2 a4 |
+  g4 a4 bes4 | bes2 a,4 | bes8 bes8~ bes2~ | bes2.~ | bes2. |
+  r4 f'4 d | c2 a8 c8 | d8 f4 g4~ g8 |  f2.
+  << { } \\ { } >>
 }
 
 sopranoVerse = \lyricmode {
@@ -100,6 +123,11 @@ sopranoVerse = \lyricmode {
   And the wild moun -- tain thyme _ 
   Grows a -- round the pur -- ple heather; _ 
   Will you go, O las -- sie, __ _ go?
+  
+  And we'll all go to -- geth -- er __
+  To pull wild moun -- tain thyme _
+  All a -- round the bloom -- in’ __ _ _ heath -- er; __
+  Will you go, O __ _ las -- _ sie go?
 }
 
 altoVerse = \lyricmode {
@@ -113,14 +141,18 @@ altoVerse = \lyricmode {
   \markup{\italic hm,} __
   \markup{\italic hm;} __ _ _
   Will you go, O las -- sie, O las -- sie, go?
+  
+  And we'll all go to -- geth -- er __
+  To pull wild moun -- tain thyme
+  All a -- round the bloom -- in’ _ heath -- er, __ heath -- er;
+  Will you go, O __ _ las -- _ sie go?
 }
 
 tenorVerse = \lyricmode {
   \markup{\italic O, } __ _
   \markup{\italic hm,} __ _ _
   \markup{\italic hm,} __ _ _ _
-  \markup{\italic hm,} __ _ _ 
-  \markup{\italic hm,} __ _ _ _
+  \markup{\italic hm,} __ _ _ _ _ _ _
   \markup{\italic hm,} __ _
   \markup{\italic hm,} __ _ _ _ _ _ 
   \markup{\italic hm,} __ _ _
@@ -132,8 +164,12 @@ tenorVerse = \lyricmode {
   By yon clear and cry -- stal foun -- tain,
   And _ on it I _ will scat -- ter
   All the flow -- ers of the moun -- tain; _
-  Las -- sie, __ _ _ go?
+  Las -- sie, __ _ _ go? _
   
+  And we'll all go _ to -- geth -- er __ _ _
+  To pull wild moun -- tain thyme _ _
+  A -- round _ the bloom -- in’ heath -- er, _ heath -- er; __ _ _
+  Will you go, O __ _ las -- _ sie _ go?
 }
 
 bassVerse = \lyricmode {
@@ -153,7 +189,12 @@ bassVerse = \lyricmode {
   And _ on it I'll __ _ scat -- ter
   All the flow -- ers, moun -- tain; _
   Will you go? __ _ _ _ _ _
-  O will _ you go?
+  O, will _ you go? _
+  
+  And we'll go to -- geth -- er __ _
+  To pull wild moun -- tain thyme _
+  A -- round _ the bloom -- in’ heath -- er; __
+  Will you go, O __ _ las -- _ sie go?
 }
 
 \score {
