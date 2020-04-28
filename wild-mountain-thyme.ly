@@ -20,6 +20,7 @@ global = {
   \key f \major
   \time 3/4
   \tempo "Pensively"
+  \set melismaBusyProperties = #'(tieMelismaBusy)
 }
 
 soprano = \relative c'' {
@@ -30,9 +31,9 @@ soprano = \relative c'' {
   r4 \mark \markup { \italic { poco accel. } } g4 a4 | bes2 a4 | g2 f4 | d8 f8~ f2 | 
   \breathe r4 \mark \markup { \italic { a tempo } } f d4 | c2 c4 | d8  f8~ f2~ | 
   f2 g4 | f2. \bar "||" \break R2.*21 \break
-
+  
   r2 a8 c | \tempo Jubilantly d2. | d2~ d8 c | a8 c8~ c2~ | 
-  c4 a c | d2. | c2 a4 |  %d~ d8 e8 d c | a4 a8 c a g | g f~ f2 |  
+  \slurDashed c4( a) c | d2. | c2 a4 |  %d~ d8 e8 d c | a4 a8 c a g | g f~ f2 |  
   g8 f8~ f2 | r4 g a | a4~ a8 bes8~ bes4 | g4~ g8 a8 g8 f8 | 
   d8 f8~ f2~ | f2.~ | f2. | r4 f4 d | c2 a8 c8 | d8 f4 g4~ g8 |
   f2.
@@ -48,7 +49,7 @@ alto = \relative c' {
   d c2 | c2. R2.*21
   
   r2 a'8 c | d2. | d2~ d8 g,8 | a8 c8~ c2~ | 
-  c4 a a | bes2. | a2 f4 | d2. |
+  \slurDashed c4( a) a | bes2. | a2 f4 | d2. |
   r4 g a | a4~ a8 bes8~ bes4 | g4~ g8 a8 d,4 | 
   d8 f8~ f2~ | f2. | bes,8 c8~ c2 |
   r4 f4 d | c2 a8 c8 | d8 f4 g4~ g8 | f2.
@@ -70,7 +71,7 @@ tenor = \relative c' {
        r4 g4 a4 | bes2 a4 | g2 f4 | d8 f8~ f2 \breathe |
        R2. | R2. | g'8 f8~ f2~ | f2. | f2.~ | f2. 
        r4 d,4 f' | f2. | f8 f8~ f2~ |
-       f4 a4 f4 | f2. | e2 c4 | bes8 a8~ a2 |
+       \slurDashed f4( a4) f4 | f2. | e2 c4 | bes8 a8~ a2 |
        r2 a4 | d2. | d2 bes4 | f8 f8~ f2 | d8 f8~ f2~ | f2. 
      } \\
      { r4 c d | f2 f4 | f2 g4 | a8 a8~ a2 |
@@ -79,7 +80,7 @@ tenor = \relative c' {
        r4 g4 a4 | g2 f4 | ees2 f4 | d8 f8 ~f2 |
        R2. | R2. | des'8 des8~ des2~ | des2. | d2.~ | d2.
        r4 d,4 f' | e d~ d8 c | a8 c8~ c2~ | 
-       c4 a'4 f4 | f2. | e2 c4 | bes8 a8~ a2 |
+       \slurDashed c4( a'4) f4 | f2. | e2 c4 | bes8 a8~ a2 |
        r2 a4 | bes4 c d | d2 bes4 | f8 f8~ f2 | d8 f8~ f2~ | f2. 
        r4 f'4 d | c2 a8 c8 | d8 f4 g4~ g8 | f2.
      } 
@@ -110,7 +111,7 @@ bass = \relative c {
      } 
   >> \bar "||"
   r4 d4 d4 | d2~ d8 e8 | f4 g4 a4~ | 
-  a4 a4 e'4 | d2. | c2 a4 | g8 f8~ f2 | r2 a4 |
+  \slurDashed a4( a4) e'4 | d2. | c2 a4 | g8 f8~ f2 | r2 a4 |
   g4 a4 bes4 | bes2 a,4 | bes8 bes8~ bes2~ | bes2.~ | bes2. |
   r4 f'4 d | c2 a8 c8 | d8 f4 g4~ g8 |  f2.
   << { } \\ { } >>
@@ -142,7 +143,7 @@ altoVerse = \lyricmode {
   \markup{\italic hm;} __ _ _
   Will you go, O las -- sie, O las -- sie, go?
   
-  And we'll all go to -- geth -- er __
+  And we'll all go to -- geth -- er 
   To pull wild moun -- tain thyme
   All a -- round the bloom -- in’ _ heath -- er, __ heath -- er;
   Will you go, O __ _ las -- _ sie go?
