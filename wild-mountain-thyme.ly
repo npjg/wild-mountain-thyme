@@ -42,6 +42,10 @@ soprano = \relative c'' {
   g2 a4 | bes2. | r4 g4 bes4 | 
   c2 c4 | c2 d4 | ees4 ees2~ | ees4 ees4 ees4
   d2. | ees2. | d4 c d | ees g, bes | c2. | d2.~ | d2. |
+  R2. | R2. | R2. | R2. | R2. | r4 a4 c4 | \bar "||" 
+ d2. | d2 c4 | a8 c8~ c2~ | 
+  \slurDashed c4( f,) f'8 e | d2 c4 | d4 e4 f8 g8 | a2. | g2. |
+  g2 a4 | g4~ g8 a8 g f | d8 f8~ f2 | 
 }
 
 alto = \relative c' {
@@ -65,6 +69,8 @@ alto = \relative c' {
   ees4 d4 ees4 | d2.
   r4 g4 bes4 | ees,2 ees4 | ees2 ees4 | aes4 aes2~ | aes4 aes4 g4
   g2.~ | g2. |  g2. | d4 ees2 | g2.~ | g2.~ | g2. | 
+  R2. | R2. | R2. | R2. | R2. | r4 a4 f8 e | d4   
+  
 }
 
 tenor = \relative c' {
@@ -103,6 +109,11 @@ tenor = \relative c' {
   bes2 bes8 a8 | g2. | r4 g4 bes4 | c2 c4 | c2 d4 | ees4 ees2~ | ees4 ees4 ees4 | 
   ees2.~ | ees2. | d8 bes8~ bes2~ | bes4 g4 bes4 | ees2.~ | ees2. | d8 bes8~ bes2 | 
   r4 g4 bes4 | 
+  << { c2.~ | c2. | c2.~ | c2.~ | c2. } \\ 
+     { bes4 aes g | aes g f | g2 aes4 | g2.~ | g2. } >> 
+  d'4 c4 d4 | e4 d4 e4 | f e c | d c d |
+  R2. | 
+  << { r2 a4 | a2. | bes2. } \\ { r2 g4 | f2. | f4~ f8 f8 a bes | g2 a4 | g4~ g8 a8 g f | d8 f8~ f2 | } >>
   
 }
 
@@ -137,6 +148,12 @@ bass = \relative c {
   d8 a8~ a2~ | a4 a,8 bes8 d8 a'8 | g4 a4 g4~ | g2 a4 | d,8 f8~ f2 | r4 a,8 bes8 f'4 | ees2 f4 | 
   g2 c,4 | bes2. | r4 g'4 bes4 | 
   aes2 aes4 | aes2 bes4 | c4 c2~ | c4 c4 aes8( g8) |
+  << { g2. | g2. | g2. | g2. | c2.~ | c2. | g2. | g2. | ees2.~ | ees2. | f2. | e?4 f g~ | g2 f4 | 
+       f2. | g2. | a2 f4 | d8 f8~ f2 |  
+     } \\ {
+    c2. | c2. | bes2. | bes2. |  aes'2.~ | aes2. | bes,2. | bes2. | aes2.~ | aes2. | c2.~ | c2.~ | c2 a4 |
+    bes2. | c2. | d2 a4 | bes2. | R2. | r2 cis'4 | d2. | des2. | d?2.
+  } >>
 }
 
 sopranoVerse = \lyricmode {
