@@ -229,7 +229,7 @@ bass = \relative c {
 
 sopranoVerse = \lyricmode {
   %\override LyricText #'font-family = #'Calibri
-  O, the sum -- mer time __ is com -- in’
+  \markup{\italic O,} the sum -- mer time __ is com -- in’
   And the trees are sweet -- ly bloom -- in’
   And the wild moun -- tain thyme _
   Grows a -- round the pur -- ple heather; _
@@ -255,13 +255,12 @@ sopranoVerse = \lyricmode {
 }
 
 altoVerse = \lyricmode {
-  \markup{\italic O, }
+  \markup{\italic O, } __
   \markup{\italic hm,} __ _ _ _
   \markup{\italic hm,} __ _
-  \markup{\italic hm,} __ _ _
   \markup{\italic hm,} __
-  \markup{\italic hm,} __ _ _ _ _ _
-  \markup{\italic hm,} __ _ _
+  \markup{\italic hm,} __ _
+  \markup{\italic hm,} __ _ _ _ _ _ _ _
   \markup{\italic hm,} __
   \markup{\italic hm;} __ _ _
   Will you go, O las -- sie, O las -- sie, go?
@@ -286,11 +285,9 @@ tenorVerse = \lyricmode {
   \markup{\italic O, } __ _
   \markup{\italic hm,} __ _ _
   \markup{\italic hm,} __ _ _ _
+  \markup{\italic hm,} __ _ _ _ _ 
+  \markup{\italic hm,} __ _ _ _ _ _ _ _ _ _
   \markup{\italic hm,} __ _ _ _ _ _ _
-  \markup{\italic hm,} __ _
-  \markup{\italic hm,} __ _ _ _ _ _
-  \markup{\italic hm,} __ _ _
-  \markup{\italic hm,} __ _ _ _
   \markup{\italic hm;} __ _
   Will you go, O las -- sie, __ go?
 
@@ -319,14 +316,11 @@ tenorVerse = \lyricmode {
 }
 
 bassVerse = \lyricmode {
-  \markup{\italic Hm,} __ _ _
-  \markup{\italic hm,} __
+  \markup{\italic Hm,} __ _ _ _
+  \markup{\italic hm,} __ _ _ _ _ _
   \markup{\italic hm,} __ _ _
-  \markup{\italic hm,} __ _ _
-  \markup{\italic hm,} __ _
-  \markup{\italic hm,} __ _
-  \markup{\italic hm,} __ _
-  \markup{\italic hm,} __
+  \markup{\italic hm;} __ _ _
+  \markup{\italic hm;} __
   \markup{\italic hm;} __ _
   Will you go, O las -- sie, will you go?
 
