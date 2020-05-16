@@ -57,12 +57,12 @@ soprano = \relative c'' {
   % Verse III.
   r4 g4 a?4 \bar "||" bes2. | bes2 a4 | a8 f8~ f2~ | 
   f4 d4 f4 | g2. | g2 a4 | f8 d8~ d2 | 
-  r4 a f' | g2. | g2 a4 | bes2. | 
+  r4 a8 bes8 f'4 | g2. | g2 a4 | bes2. | 
   r4 g4 bes4 | c2 c4 | c2 d4 | ees4 ees2~ | 
   
-  ees4 ees4 ees4 | d2. | ees2. | d4 c d | 
-  ees g, bes | c2. | d2.~ | d2. |
-  R2.*3
+  ees4 ees4 ees4 | ees4 d2~ | d2 d4  | d4 c d | 
+  ees g, bes | c2. | d2.~ | d2. | R2.*5 | r2 d4 |
+  c2.
 }
 
 alto = \relative c' {
@@ -93,14 +93,14 @@ alto = \relative c' {
   << { d8 f~ f4 c4~ | c2. |  } \\ { d8 f~ f4 c8 bes8 | c2. | } >> des2. | ees2. | 
   
   % Verse III.
-  r4 g4 a?4 \bar "||" bes4 a4 g4 | g2 g4 | f8 d8~ d2~ | 
-  d4 d4 d4 | ees2. | ees4 f4 ees4 | f8 d8~ d4 c4 | 
+  r4 g4 a?4 \bar "||" bes4~ bes8 a8 g4 | g2 g4 | a8 f8~ f2~ | 
+  f4 d4 d4 | ees2. | ees4 f4 ees4 | f8 d8~ d4 c4 | 
   d4 a8 bes8 c4 | ees4 d2 | ees4 d4 ees4 | d2. |
   r4 g4 bes4 | ees,2 ees4 | ees2 ees4 | aes4 aes2~ | 
   
   aes4 aes4 g4 | g2.~ | g2. |  g2. | 
-  d4 ees2 | g2.~ | g2.~ | g2. |
-  R2.*3
+  ees4 g bes | g2.~ | g2.~ | g2. |
+  R2.*3 | r2 d4( | ees8 d ees f ees f | g2.~) | g2.
 
 }
 
@@ -149,9 +149,9 @@ tenor = \relative c' {
   d f~ f4 f8 g8 | aes2. | aes4 bes c | bes2. | 
   
   % Verse III.
-  r4 g4 a?4 | bes4 c4 d4 | d2 d8 c8 | d8 a8~ a4 g4 | 
+  r4 g4 a?4 | bes4~ bes8 c8 d4 | d2 d8 c8 | d8 a8~ a4 bes4 | 
   a4 d4 f4 | bes,2. | bes2 c4 | bes8 bes8~ bes2 | 
-  r4 a a | bes2. | bes2 bes8 a8 | g2. | 
+  r4 a8 bes8 a4 | bes2. | bes2 bes8 a8 | g2. | 
   r4 g4 bes4 | c2 c4 | c2 d4 | ees4 ees2~ | 
   
   ees4 ees4 ees4 | ees2.~ | ees2. | d8 bes8~ bes2~ | 
@@ -159,9 +159,11 @@ tenor = \relative c' {
   r4 g4 bes4 |
   <<
     { 
-      c2.~ | c2. |  
+      c2.~ | c2.~ | c2.~ | c2.~ | c2.~ | c2. |
+      
     } \\ { 
-      bes4 aes g | aes g f | 
+      bes4 aes g | aes g f | g2.~ | g2.~ | g2.~ | g2. |
+      
     }
   >>
 }
@@ -220,11 +222,12 @@ bass = \relative c {
     {
       g2. | g2. | g2. | g2. | 
       c2.~ | c2. | g2. | g2. | 
-      ees2.~ | ees2. |
+      ees2.~ | ees2.~ | ees2.~ | ees2.~ | ees2.~ | ees2.
     } \\ {
       c2. | c2. | bes2. | bes2. | 
       aes'2.~ | aes2. | bes,2. | bes2. | 
-      aes2.~ | aes2. |
+      aes2.~ | aes2.~ | aes2.~ | aes2.~ | aes2.~ | aes2. |
+      
     }
   >>
 }
@@ -249,11 +252,13 @@ sopranoVerse = \lyricmode {
 
   I will range through the wilds, __ _
   And the deep land so dreary _
-  And re -- turn with the spoils
-  To the bow -- er o’ my dear -- ie!
+  And _ re -- turn with the spoils
+  To the bow -- er o’ my dear -- ie! __
 
-  Will you go, O las -- _ _ sie? Will you go, O? __
+  Will you go, __ _ O las -- _ _ sie? Will you go, O? __
 
+  \markup {\italic O,}  __ _
+  
   And we'll all go to -- geth -- er
   To pull _ wild _ moun -- tain _ _ time _
 }
@@ -286,7 +291,9 @@ altoVerse = \lyricmode {
   And _ re -- turn _ with _ the spoils
   To the bow -- er o’ my dear -- ie!
 
-  Will you go, las -- _ sie? Go? __
+  Will you go, las -- _ _ sie? Go? __
+  
+  \markup {\italic O,}  __ _ _ _ _ _ _ _
 }
 
 tenorVerse = \lyricmode {
@@ -318,7 +325,7 @@ tenorVerse = \lyricmode {
 
   I will range __ _ _ through the _ wilds, __ _ _ _
   And the deep land so dreary _
-  And re -- turn with the _ spoils
+  And _ re -- turn with the _ spoils
   To the bow -- er o’ my dear -- ie!
 
   Will you go, las -- sie? __
@@ -358,7 +365,8 @@ bassVerse = \lyricmode {
   And _ re -- turn _ with the spoils
   To the bow -- er o’ my dear -- ie!
 
-  Will you _ go, go, las -- sie? Go, _ las -- sie, go? __ _
+  Will you _ go, go, las -- sie? Go, _ las -- sie, go? __ _ _ _ _ _
+  
 }
 
 \score {
