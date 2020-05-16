@@ -33,7 +33,7 @@ soprano = \relative c'' {
   % Verse I.
   \partial 4 c,8 d | f f~ f2 | f2~ f8 f | f8 f8~ f2 |
   r4 a c | d2 c4 | d2 c4 | a8-- c8~ c2 |
-  r4 r8 a8 c4 | d2. | c2~ c8 a8 | g8 f8~ f2 |
+  r4. a8 c4 | d2. | c2~ c8 a8 | g8 f8~ f2 |
   r4 \mark \markup { \italic { poco accel. } } g4 a4 | bes2 a4 | g2 f4 | d8 f8~ f2\fermata |
   
   \breathe r4 \mark \markup { \italic { a tempo } } f d4 | c2 c4 | d8  f8~ f2~ | f2 g4 | f2.  \bar "||"
