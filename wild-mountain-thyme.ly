@@ -44,7 +44,7 @@ soprano = \relative c'' {
   % Refrain I.
   r4 a4 c | d2. | d2~ d8 c-- | a8 c8~ c2~ |
   \slurDashed c4( a) c | d2. | c2 a4 | g8 f8~ f2 | 
-  r4 g a | a4~ a8 bes8~ bes4 | g4~ g8 a8 g8 f8 | d8 f8~ f2~ | f2.~ | f2. | 
+  \break r4 g a | a4~ a8 bes8~ bes4 | g4~ g8 a8 g8 f8 | d8 f8~ f2~ | f2.~ | f2. | 
   
   r4 f4 d | c2 a8 c8 | d8 f4 g4~ g8 | f2. \bar "||"
   
@@ -78,7 +78,7 @@ alto = \relative c' {
   R2.*21
 
   % Refrain I.
-  r4 a'4 c | d2. | d2~ d8 g,8-- | a8 c8~ c2~ |
+  r4 a'4 c | d2. | f,2~ f8 g8-- | a8 c8~ c2~ |
   \slurDashed c4( a) a | bes2. | a2 f4 | d2. |
   r4 g a | a4~ a8 bes8~ bes4 | g4~ g8 a8 d,4 | d8 f8~ f2~ | f2. | bes,8 c8~ c2 |
   
@@ -121,26 +121,20 @@ tenor = \relative c' {
       f4 g4 a4 | bes2 a4 | g4~ g8 a g f | d8 f8~ f2 |
       
       \breathe R2. | R2. | g'8 f8~ f2~ | f2. | f2. \bar "||"
-      
-      % Refrain I.
-      R2. | r4 d4 f | f2. | f8 f8~ f2~ |
-      \slurDashed f4( a4) f4 | f2. | e2 c4 | bes8 a8~ a2 |
-      r2 a4 | d2. | d2 bes4 | f8 f8~ f2 | d8 f8~ f2 | f2. |
     } \\ {
       % Verse II.
-      r4 f d | c4 f4 f4 | f2 e4 | f8 f8~ f2 |
+      r4 f, d | c4 f4 f4 | f2 e4 | f8 f8~ f2 |
       r4 a c | d2 c4 | d2 c4 | a4 c2 |
       r4 a4 a4 | a2 a4 | c2~ c8 a8 | g2 a8 g8 |
       f4 g4 a4 | g2 f4 | ees2 f4 | d8 f8 ~f2 |
       
       R2. | R2. | des'8 des8~ des2~ | des2. | d2. | 
-      
-      % Refrain I.
-      R2. | r4 d4 f | e d~ d8 c-- | a8 c8~ c2~ |
-      \slurDashed c4( a'4) f4 | f2. | e2 c4 | bes8 a8~ a2 |
-      r2 a4 | bes4 c d | d2 bes4 | f8 f8~ f2 | d8 f8~ f2~ | f2.
     }
   >>
+  % Refrain I.
+  R2. | r4 d,4 f' | e d~ d8 c-- | a8 c8~ c2~ |
+  \slurDashed c4( a4) f'4 | f2. | e2 c4 | bes8 a8~ a2 |
+  r2 a4 | bes4 c d | d2 bes4 | f8 f8~ f2 | d8 f8~ f2~ | f2.
   
   r4 f'4 d | c2 a8 c8 | d8 f4 g4~ g8 | f2. |
   
@@ -297,8 +291,8 @@ tenorVerse = \lyricmode {
   All the flow -- ers of _ _ _ the moun -- tain; _
   Las -- sie, __ _ _ go?
 
-  And we'll all go _ to -- geth -- er __ _ _
-  To pull wild moun -- tain thyme _ _
+  And we'll all go to -- geth -- er __
+  To pull wild moun -- tain thyme _
   A -- round _ the bloom -- in’ heath -- er, _ heath -- er; __ _ _
   Will you go, O __ _ las -- _ sie go?
 
