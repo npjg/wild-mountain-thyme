@@ -32,9 +32,9 @@ soprano = \relative c'' {
   
   % Verse I.
   \partial 4 c,8 d | f f~ f2 | f2~ f8 f | f8 f8~ f2 |
-  r4 a c | d2 c4 | d2 c4 | a8 c8~ c2 |
+  r4 a c | d2 c4 | d2 c4 | a8-- c8~ c2 |
   r4 r8 a8 c4 | d2. | c2~ c8 a8 | g8 f8~ f2 |
-  r4 \mark \markup { \italic { poco accel. } } g4 a4 | bes2 a4 | g2 f4 | d8 f8~ f2 |
+  r4 \mark \markup { \italic { poco accel. } } g4 a4 | bes2 a4 | g2 f4 | d8 f8~ f2\fermata |
   
   \breathe r4 \mark \markup { \italic { a tempo } } f d4 | c2 c4 | d8  f8~ f2~ | f2 g4 | f2.  \bar "||"
 
@@ -68,9 +68,9 @@ alto = \relative c' {
   
   % Verse I.
   \partial 4 c4 | c2 e4 | d2. | d2 e4 |
-  d2~ d8 f8~ | f2. | f2. | f2.~ |
+  d2~ d8 f8~ | f2.~ | f2. | f2.~ |
   f4 e2 | f4( e4 d4 | e4 d4 c4) | d2 e4 |
-  d2. | d2.~ | d2. | r4 r8 a8( bes c8--) |
+  d2.~ | d2.~ | d2. | r4 r8 a8( bes c8--\fermata) |
   
   \breathe r4 f d4 | c2 c4 | d8 f8~ f4 e4 | d c2 | c2. | 
   
@@ -106,8 +106,8 @@ tenor = \relative c' {
   % Verse I.
   \partial 4 c8 bes8 | a2 c4 | bes2. | a2 c4 | 
   bes2 a4 | bes2~( bes8 c8 | d4 f4 e4 | e2 c4 | 
-  a8 c8~ c2) | d4( c4 bes4 | c4 b4 a4) | f2 g4 |
-  a2. | g2 a4 | bes2 a4 | f8 bes8~ bes2 |
+  a8-- c8~ c2) | d4( c4 bes4 | c4 b4 a4) | f2 g4 |
+  a2. | g2 a4 | bes2 a4 | f8 bes8~ bes2\fermata |
   
   \breathe r4 f d4 | c2 e4 | f8 bes8~ bes2~ | bes2.~ | bes2 a4
 
@@ -120,7 +120,7 @@ tenor = \relative c' {
       r4 a4 cis4 | d2 e4 | c2~ c8 a8 | g2 a8 g8 |
       f4 g4 a4 | bes2 a4 | g4~ g8 a g f | d8 f8~ f2 |
       
-      \breathe R2. | R2. | g'8 f8~ f2~ | f2. | f2. | 
+      \breathe R2. | R2. | g'8 f8~ f2~ | f2. | f2. \bar "||"
       
       % Refrain I.
       R2. | r4 d4 f | f2. | f8 f8~ f2~ |
@@ -173,7 +173,7 @@ bass = \relative c {
   \partial 4 r4 | R2. | bes'4( a g | f2.~) | 
   f2. | g2~ g8 a8 | bes2. | c2 c,4 | 
   d2 a4 | bes2. | a2~ a8 a8 | bes8 d~ d2 |
-  d2.~ | d2.~ | d2. | bes8 d8~ d2 |
+  d2.~ | d2.~ | d2. | bes8 d8~ d2\fermata |
   
   \breathe r4 f d4 | c2 a4 | bes8 d8~ d2 | d2~ d8 e8 | f2.
   
