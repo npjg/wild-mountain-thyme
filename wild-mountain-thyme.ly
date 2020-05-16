@@ -183,9 +183,9 @@ bass = \relative c {
     {
       % Verse II.
       r4 f d | c f e | d c2 | c2 e4 |
-      r4 a4 a4 | bes2 a4 | a2 a4 | e4 a2 |
+      d4 a'4 a4 | bes2 a4 | a2 a4 | e4 a2 |
       r4 a4 g4 | f2 f4 | e4~ e2 | g2~ g4 |
-      f4 g4 a4 | ees2. | ees2. | bes8 d8~ d2 |
+      f2. | ees2. | ees2. | bes8 d8~ d2 |
       
       \breathe r4 f d | des8 f8~ f2 | bes8 bes8~ bes2~ | bes2. | a2. |
     } \\ {
@@ -193,7 +193,7 @@ bass = \relative c {
       r4 f d | c f e | d c2 | c2 e4 |
       d4 r4 e8 g8 | f2 e4 | f2 e4 | c4 e4 f4 |
       g4 a4 e4 | f2 e4 | c4 a2 | bes2~ bes4 |
-      d4 g4 a4 | bes,2. | bes2. | bes8 d8~ d2 |
+      d2. | bes2. | bes2. | bes8 d8~ d2 |
       r4 \mark \markup { \italic { sotto voce } } f d | des8 f8~ f2~ | f2 g4 | a4 g4 f4 | f2. |
     }
   >>
@@ -344,8 +344,8 @@ bassVerse = \lyricmode {
 
   I will make _ my love, _ bow -- _ er
   By yon _ clear and crys -- tal foun -- tain __ _ _
-  And _ on it I'll __ _ scat -- _ ter
-  All the flow -- ers, moun -- tain; _
+  And _ on it I'll __ _ scat -- _ ter,
+  flow -- ers, moun -- tain; _
   Will you go? __ _ _ _ _ _
   O, will _ you go?
 
