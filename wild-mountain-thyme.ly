@@ -42,8 +42,8 @@ soprano = \relative c'' {
   \break R2.*21 \break
 
   % Refrain I.
-  r4 a4 c | d2. | d2~ d8 c-- | a8 c8~ c2~ |
-  \slurDashed c4( a) c | d2. | c2 a4 | g8 f8~ f2 | 
+  r4 a4 c8 d8 | d2. | d2~ d8 c-- | a8 c8~ c2~ |
+  \slurDashed c4( a) c | d2 e8 d8 | c2 a4 | g8 f8~ f2 | 
   \break r4 g a | a4~ a8 bes8~ bes4 | g4~ g8 a8 g8 f8 | d8 f8~ f2~ | f2.~ | f2. | 
   
   r4 f4 d | c2 a8 c8 | d8 f4 g4~ g8 | f2. \bar "||"
@@ -78,7 +78,7 @@ alto = \relative c' {
   R2.*21
 
   % Refrain I.
-  r4 a'4 c | d2. | f,2~ f8 g8-- | a8 c8~ c2~ |
+  r4 a'4 c8 d8 | d2. | f,2~ f8 g8-- | a8 c8~ c2~ |
   \slurDashed c4( a) a | bes2. | a2 f4 | d2. |
   r4 g a | a4~ a8 bes8~ bes4 | g4~ g8 a8 d,4 | d8 f8~ f2~ | f2. | bes,8 c8~ c2 |
   
@@ -136,7 +136,7 @@ tenor = \relative c' {
   \slurDashed c4( a4) f'4 | f2. | e2 c4 | bes8 a8~ a2 |
   r2 a4 | bes4 c d | d2 bes4 | f8 f8~ f2 | d8 f8~ f2~ | f2.
   
-  r4 f'4 d | c2 a8 c8 | d8 f4 g4~ g8 | f2. |
+  r4 f4 d | c2 a8 c8 | d8 f4 g4~ g8 | f2. |
   
   % Interlude.
   R2. | R2. | r2 a,4 | g4~ g8 a g f | 
@@ -193,7 +193,7 @@ bass = \relative c {
   % Refrain I.
   R2. | r4 d4 d4 | d2~ d8 e8-- | f4 g4 a4~ |
   \slurDashed a4( a4) e'4 | d2. | c2 a4 | g8 f8~ f2 | 
-  r2 a4 | g4 a4 bes4 | bes2 a,4 | bes8 bes8~ bes2~ | bes2.~ | bes2. |
+  r2 a4 | g4 a4 bes4 | bes2 a,4 | bes2. | bes2.~ | bes2. |
   
   r4 f'4 d | c2 a8 c8 | d8 f4 g4~ g8 | f2. |
   
@@ -223,14 +223,14 @@ bass = \relative c {
 
 sopranoVerse = \lyricmode {
   %\override LyricText #'font-family = #'Calibri
-  \markup{\italic O,} the sum -- mer time __ is com -- in’
+  \markup{\italic O,} the sum -- mer time is com -- in’
   And the trees are sweet -- ly bloom -- in’
   And the wild moun -- tain thyme _
   Grows a -- round the pur -- ple heather; _
   Will you go, O las -- sie, __ _ go?
 
-  And we'll all go to -- geth -- er __
-  To pull wild moun -- tain thyme _
+  And we'll _ all go to -- geth -- er __
+  To pull wild __ _ _ moun -- tain thyme _
   All a -- round the bloom -- in’ __ _ _ heath -- er; __
   Will you go, O __ _ las -- _ sie go?
 
@@ -259,7 +259,7 @@ altoVerse = \lyricmode {
   \markup{\italic hm;} __ _ _
   Will you go, O las -- sie, O las -- sie, go?
 
-  And we'll all go to -- geth -- er
+  And we'll _ all go to -- geth -- er
   To pull wild moun -- tain thyme
   All a -- round the bloom -- in’ _ heath -- er, __ heath -- er;
   Will you go, O __ _ las -- _ sie go?
@@ -293,7 +293,7 @@ tenorVerse = \lyricmode {
 
   And we'll all go to -- geth -- er __
   To pull wild moun -- tain thyme _
-  A -- round _ the bloom -- in’ heath -- er, _ heath -- er; __ _ _
+  A -- round _ the bloom -- in’ heath -- er, heath -- er; __
   Will you go, O __ _ las -- _ sie go?
 
   \markup {\italic O,}  __ _ _ _ _ _ _
