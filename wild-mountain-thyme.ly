@@ -49,8 +49,10 @@ soprano = \relative c'' {
   r4 f4 d | c2 a8 c8 | d8 f4 g4~ g8 | f2. \bar "||"
   
   % Interlude.
-  r4 a4 c4 | d4~ d8 e d c | a8 c8~ c2 | R2. | 
-  r2 f,8 g8 | aes4~ aes8 g8 f4  | aes bes c | bes2. | 
+  R2. | R2. | r2 a8 c8 | d8 f8~ f4 d4 | 
+  c8 a8~ a4 r4 | R2. | R2. | r2 e4 |
+  f4 a4 c4 | d4~ d8 e d c | a8 c8~ c2 | R2. | 
+  r2 f,8 g8 | aes4~ aes8 g8 f4  | aes bes c | bes2. | \break
   
   % Verse III.
   r4 g4 a?4 \bar "||" bes2. | bes2 a4 | a8 f8~ f2~ | 
@@ -85,7 +87,9 @@ alto = \relative c' {
   r4 f4 d | c2 a8 c8 | d8 f4 g4~ g8 | f2. |
   
   % Interlude.
-  R2. | R2. | r2 a4 | g4~ g8 a g f |
+  r4 c4 d | f2 g8 f | a8 c8~ c2 | R2. | 
+  r2 g4 | g8 a g f d4 | f4~ f8 g8 c,4 | d2.~ |
+  d4 a'4 c4 | d4~ d8 e d c | a8 c8 r4 a4 | g4~ g8 a g f |
   << { d8 f~ f4 c4~ | c2. |  } \\ { d8 f~ f4 c8 bes8 | c2. | } >> des2. | ees2. | 
   
   % Verse III.
@@ -139,8 +143,10 @@ tenor = \relative c' {
   r4 f4 d | c2 a8 c8 | d8 f4 g4~ g8 | f2. |
   
   % Interlude.
-  R2. | R2. | r2 a,4 | g4~ g8 a g f | 
-  d f~ f4 f8 g16 aes16~ | aes2. | aes4 bes c | bes2. | 
+  R2. | R2. | r2 a8 c8 | d8 f8~ f4 d4 | 
+  c8 a8~ a4 r4 | R2. | R2. | d,2.~ |
+  d4 a'4 c4 | d4~ d8 e d c | a8 c8 r4 a4 | g4~ g8 a g f 
+  d f~ f4 f8 g8 | aes2. | aes4 bes c | bes2. | 
   
   % Verse III.
   r4 g4 a?4 | bes4 c4 d4 | d2 d8 c8 | d8 a8~ a4 g4 | 
@@ -198,7 +204,9 @@ bass = \relative c {
   r4 f'4 d | c2 a8 c8 | d8 f4 g4~ g8 | f2. |
   
   % Interlude.
-  r4 a4 c4 | d4~ d8 e d c | a8 c8~ c2 | R2. | 
+  r4 c4 d | f2 g8 f | a8 c8~ c2 | R2. | 
+  r2 g4 | g8 a g f d4 | f4~ f8 g8 c,4 | d2 e4 |
+  f4 a4 c4 | d4~ d8 e d c | a8 c8~ c2 | R2. | 
   r2 f,8 ees | des4~ des8 ees8 f4 | f2~ f8 aes8~ | aes2 g4 | 
   
   % Verse III.
@@ -234,6 +242,8 @@ sopranoVerse = \lyricmode {
   All a -- round the bloom -- in’ __ _ _ heath -- er; __
   Will you go, O __ _ las -- _ sie go?
 
+  \markup {\italic Hm,} __ _ _ _ _ _ _
+  \markup {\italic hm;} __ _
   \markup {\italic O,}  __ _ _ _ _ _ _ _
   \markup {\italic ah;}  __ _ _ _ _ _ _ _ _
 
@@ -264,7 +274,11 @@ altoVerse = \lyricmode {
   All a -- round the bloom -- in’ _ heath -- er, __ heath -- er;
   Will you go, O __ _ las -- _ sie go?
 
+  \markup {\italic Hm,} __ _ _ _ _ _ _
+  \markup {\italic hm,} __ _ _ _ _ _ _ _ _
+  \markup {\italic hm;} __
   \markup {\italic O,}  __ _ _ _ _ _ _ _
+  \markup {\italic o,}  __ _ _ _ _ _ _ _
   \markup {\italic ah;}  __ _ _ _ _
 
   I will range __ _ _ through the wilds, __ _
@@ -296,7 +310,10 @@ tenorVerse = \lyricmode {
   A -- round _ the bloom -- in’ heath -- er, heath -- er; __
   Will you go, O __ _ las -- _ sie go?
 
-  \markup {\italic O,}  __ _ _ _ _ _ _
+  \markup {\italic Hm,} __ _ _ _ _ _ _
+  \markup {\italic hm;} __
+  \markup {\italic O,}  __ _ _ _ _ _ _ _
+  \markup {\italic o,}  __ _ _ _ _ _ _
   \markup {\italic ah;}  __ _ _ _ _ _ _
 
   I will range __ _ _ through the _ wilds, __ _ _ _
@@ -330,6 +347,9 @@ bassVerse = \lyricmode {
   A -- round _ the bloom -- in’ heath -- er; __
   Will you go, O __ _ las -- _ sie go?
 
+  \markup {\italic Hm,} __ _ _ _ _ _ _
+  \markup {\italic hm,} __ _ _ _ _ _ _ _ _ _
+  \markup {\italic hm;} __ _
   \markup {\italic O,}  __ _ _ _ _ _ _ _
   \markup {\italic ah;}  __ _ _ _ _ _ _ _
 
