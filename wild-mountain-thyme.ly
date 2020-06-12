@@ -15,7 +15,6 @@
   %dedication = \markup{\italic "to Emma."}
   title = \markup{\caps{"Will you go?"}}
   composer = "arr. N.G."
-  %arranger = "arr. N.G."
   poet = "Traditional Irish ballad."
   tagline = ##f
 }
@@ -36,11 +35,11 @@ soprano = \relative c'' {
   
   % Verse I.
   \partial 4 c,8\mp( d) | f f~ f2 | f2~ f8 f | f8 f8~ f2 |
-  r4 a c | d2 c4 | d2 c4 | a8-- c8~ c2 |
+  r4 a c | \d2 c4 | d2 c4 | a8-- c8~ c2 |
   r4. a8\< c4 | d2.\! | c2~ c8 a8 | g8 f8~ f2 |
   r4 \mark \markup { \italic { poco accel. } } g4 a4 | \acciaccatura c bes2 a4 | g4~ g8 a g f8 | d8 f8~ f2\fermata |
   
-  \breathe r4 f4~\mf f8 d8 | c2 c4\< | d8  f8~\! f2~ | f2 g4 | f2.\>  \bar "||" \!
+  \breathe \break r4 f4~\mf f8 d8 | c2 c4\< | d8  f8~\! f2~ | f2 g4 | f2.\>  \bar "||" \! \pageBreak
 
   % Verse II. 	
   \break R2.*21 \break
@@ -77,7 +76,7 @@ soprano = \relative c'' {
   % Verse IV.
   g2.~\p | g2.~ | g2.~ | g2 e4\mf g4 | a2 g4 | \break
   a b c8\< d | \mark \markup { \italic { molto allarg. } } e2. | e2.\ff\> | e2.\! |
-  e4\<( d4 e4 | f4\! ees4 c4)~ | \break c4\< \mark \markup { \italic { poco rit. } } ees( f | g2)\mp r4 \breathe |
+  e4\<( d4 e4 | f4\! ees4 c4)~ | \break c4\< \mark \markup { \italic { poco rit. } } ees( f | g2)\mp r4 |
   
   g,8--\p g8~ g2~ | g2. | \mark \markup { \italic { morendo } } g2.\fermata \bar "|."
   
@@ -128,7 +127,7 @@ alto = \relative c' {
   % Verse IV.
   r4 c2~\> | c2.~\p | c2.~ | c2.~ | \time 4/4 c2 e4\mf g |
   \time 3/4 a2 g4 | a2 f4\< | e8 a8~ a2~ | a4\ff c--\p\> ( b-- |
-  a2.~--\!) | a2. |  aes2.~ | aes2.\< | c2\mp r4\breathe |
+  a2.~--\!) | a2. |  aes2.~ | aes2.\< | c2\mp r4 |
   
   c,8--\p c8~ c2~ | c2. | c2.\fermata
   
@@ -142,7 +141,7 @@ tenor = \relative c' {
   \partial 4 c8\mp( bes8) | a2( c4 | bes2.) | a2( c4 | 
   bes2) a4( | bes2~ bes8 c8 | d4 f4 e4 | e2 c4 | 
   a8--\< c8~ c2) | d4\<( c4 bes4 | c4 b4\> a4 | f2 g4 |
-  a2.\!) \mark \markup { \italic { poco accel. } } | g2 a4 | bes2 f4 | f8 bes8~ bes2\fermata |
+  a2.\!) \mark \markup { \italic { poco accel. } } | g2 a4 | bes2 a4 | f8 bes8~ bes2\fermata |
   
   \breathe r4 f4~\mf f8 d8 | c2 e4\< | f8 bes8~\! bes2~ | bes2.~ | bes2\> a4 | \!
 
@@ -150,17 +149,17 @@ tenor = \relative c' {
   <<
     {
       % Verse II.
-      r4 f\mf d | c4 f4 f4 | f2 g4 | a8 a8~ a2 |
+      r4 f\mf d | c4 f4 f4 | f2 g4 | a4 a2 |
       r4 a c | d2 c4 | d2 c4 | a4 c2 |
-      r4 a4\< cis4 | d2\> e4 | c2~ c8\! a8 | g2 a8 g8 |
+      r4 a4\< cis4 | d2\> e4 | c2\! a4 | g4 a4 g4 |
       f4\< g4 a4 | bes2\! a4 | g4~\> g8 a g f | d8 f8~ f2\! |
       
       \breathe R2. | R2. | g'8\<\mark \markup { \italic { sotto voce } } f8~ f2~ | f2.\> | f2.\!\p \bar "||"
     } \\ {
       % Verse II.
-      r4 f, d | c4 f4 f4 | f2 e4 | f8 f8~ f2 |
+      r4 f, d | c4 f4 f4 | f2 e4 | f4 f2 |
       r4 a c | d2 c4 | d2 c4 | a4 c2 |
-      r4 a4 a4 | a2 a4 | c2~ c8 a8 | g2 a8 g8 |
+      r4 a4 a4 | a2 a4 | c2 a4 | g4 a4 g4 |
       f4 g4 a4 | g2 f4 | g4~ g8 a g f | d8 f8 ~f2 |
       
       R2. | R2. | des'8 des8~ des2~ | des2. | d2. | 
@@ -208,7 +207,7 @@ tenor = \relative c' {
   << {
       f2.~ | f2. | g2 r4 | g,8-- g8~ g2 | f2 f4 | e2.\fermata
      } \\ {
-      f'2.~ | f2.\< | e2\mp r4\breathe | f,8 f8~ f2 | f2 f4 | e2.
+      f'2.~ | f2.\< | e2\mp r4 | f,8 f8~ f2 | f2 f4 | e2.
      } 
   >>
  
@@ -229,8 +228,8 @@ bass = \relative c {
     {
       % Verse II.
       r4 f\mf d | c f e | d c2 | c2 e4 |
-      d4 a'4 a4 | bes2 a4 | a2 a4 | e4 a2 |
-      r4 a4 g4 | f2 f4 | e4~ e2 | bes4 d2~ |
+      d4 a'4 a4 | a2 a4 | a2 a4 | e4 a2 |
+      r4 a4 g4 | f2 f4 | e4~ e2 | d2. |
       d2. | ees2. | ees2. | bes8 d8~ d2 |
       
       \breathe r4 f d | des8 f8~ f2 | bes8 bes8~ bes2~ | bes2. | a2. |
@@ -238,7 +237,7 @@ bass = \relative c {
       % Verse II.
       r4 f d | c f e | d c2 | c2 e4 |
       d4 r4 e8( g8) | f2 e4 | f2 e4 | c4 e4( f4 |
-      g4\< a4) e4 | f2\> e4 | c4 a2\! | bes4 bes2~ |
+      g4\< a4) e4 | f2\> e4 | c4 a2\! | bes2. |
       bes2.\< | bes2.\! | bes2.\> | bes8 d8~ d2\! |
       r4 \mark \markup { \italic { sotto voce } } f d | des8 f8~ f2~ | f2\< g4 | a4\> g4 f4 | f2.\p |
     }
@@ -298,7 +297,7 @@ bass = \relative c {
       % Verse IV.
       f2. | r4 c'4\mp a | g8 g8~ g2 | a2 c8 a | d8 e8~ e4 e4 g |
       a2 g4 | a2 gis4\< | a2. | a4\ff a4\p\> a4 |
-      a2.~\! | a2. | aes2.~ | aes2.\< | g2\mp r4\breathe | 
+      a2.~\! | a2. | aes2.~ | aes2.\< | g2\mp r4 | 
       
       bes,8 bes8~ bes4 bes4 | a4 f a g2.\fermata 
     }
@@ -390,9 +389,9 @@ tenorVerse = \lyricmode {
   \markup{\italic hm,} __ _
   Will you go, O las -- sie, __ go?
 
-  I will build _ my love a bow -- er _
+  I will build _ my love a bow -- er
   By yon pure and cry -- stal foun -- tain,
-  And _ on it I _ will scat -- _ _ ter
+  And _ on it I will scat -- _ _ ter
   All the flow -- ers of _ _ _ the moun -- tain; _
   Las -- sie, __ _ _ go?
 
@@ -439,7 +438,7 @@ bassVerse = \lyricmode {
 
   I will build _ my love, _ bow -- _ er
   By yon _ clear and crys -- tal foun -- tain __ _ _
-  And _ on it I'll __ _ scat -- ter, __ _
+  And _ on it I'll __ _ scat -- ter,
   flow -- ers, moun -- tain; _
   Will you go? __ _ _ _ _ _
   O, will _ you go?
