@@ -35,7 +35,7 @@ soprano = \relative c'' {
   
   % Verse I.
   \partial 4 c,8\mp( d) | f f~ f2 | f2~ f8 f | f8 f8~ f2 |
-  r4 a c | \d2 c4 | d2 c4 | a8-- c8~ c2 |
+  r4 a c | d2 c4 | d2 c4 | a8-- c8~ c2 |
   r4. a8\< c4 | d2.\! | c2~ c8 a8 | g8 f8~ f2 |
   r4 \mark \markup { \italic { poco accel. } } g4 a4 | \acciaccatura c bes2 a4 | g4~ g8 a g f8 | d8 f8~ f2\fermata |
   
@@ -70,11 +70,11 @@ soprano = \relative c'' {
   % Refrain II.
   r4\fermata \tempo "Dolcissimo." e,\pp g a2. | a2 g4 | 
   e8 g8~ g2~\! | g4\breathe f4\fermata g4\fermata | a4 g a | b \mark \markup { \italic {rall. } } a b | c(\< b g~ | 
-  g\> a2~ | a4.)\! r8 c,8\mp \mark \markup { \italic { più mosso } } d8 | f2 e4 | d4 d8\< e c b\! | a c~ c4 e8\> f8 |
-  g2 a4 \bar "||" \break
+  g\> a2~ | a4.)\! r8 c,8\mp \mark \markup { \italic { più mosso } } d8 | f2 e4 | d4 \break d8\< e c b\! | a c~ c4 e8\> f8 |
+  g2 a4
   
   % Verse IV.
-  g2.~\p | g2.~ | g2.~ | g2 e4\mf g4 | a2 g4 | \break
+  g2.~ \bar "||" \break g2.~\p | g2.~ | g2.~ | g2. | r4 e4\mf g4 | a2 g4 | \break
   a b c8\< d | \mark \markup { \italic { molto allarg. } } e2. | e2.\ff\> | e2.\! |
   e4\<( d4 e4 | f4\! ees4 c4)~ | \break c4\< \mark \markup { \italic { poco rit. } } ees( f | g2)\mp r4 |
   
@@ -88,7 +88,7 @@ alto = \relative c' {
   % Verse I.
   \partial 4 c4\mp | c2 e4 | d2.~ | d2 e4 |
   d2~ d8 f8~ | f2.~ | f2. | f2.~ |
-  f4\< e2 | f4\<( e4 d4 | e4 d4\> c4 | d2 e4 |
+  f4\< e2 | f4( e4 d4 | e4 d4\> c4 | d2 e4 |
   d2.)\! \mark \markup { \italic { poco accel. } } | d2.~ | d2. | r4 r8 a8( bes c8--\fermata) |
   
   \breathe r4 f4~\mf f8 d8 | c2 c4\< | d8 f8~\! f4 e4( | d c2) | c2.\> | \! 
@@ -99,7 +99,7 @@ alto = \relative c' {
   % Refrain I.
   r4 a'4\mf c4 | d2. | f,2~ f8 g8-- | a8 c8~ c2~ |
   c8 r8 a4\< a | bes2.\f | a2\> f4 | d2.~\! |
-  d4\! g\mp a | d,4~ d8 d8~ d4 | c2 c4 | d8 d8~ d2 | bes8\< c8~ c2~ | c2.
+  d4\! c\mp c | d4~ d8 d8~ d4 | c2 c4 | d8 d8~ d2 | bes8\< c8~ c2~ | c2.
   
   r4 \mark \markup { \italic { liltingly } } f4\f d | c2 a8 c8 | d8 f4 g4~ g8 | f2. |
   
@@ -125,8 +125,8 @@ alto = \relative c' {
   e\<( d2~ | d2\> e4 | f4.\!) r8 c8\mp d8 | a2 a4 | d4 d8\< e c b\! | a c~ c2 | 
   
   % Verse IV.
-  r4 c2~\> | c2.~\p | c2.~ | c2.~ | \time 4/4 c2 e4\mf g |
-  \time 3/4 a2 g4 | a2 f4\< | e8 a8~ a2~ | a4\ff c--\p\> ( b-- |
+  r4 c2~\> | c2.~ | c2.~\p | c2.~ | c2.~ | c2. | r4 e4\mf g |
+  a2 g4 | a2 f4\< \mark \markup { \italic { molto allarg. } }  | e8 a8~ a2~ | a4\ff c--\p\> ( b-- |
   a2.~--\!) | a2. |  aes2.~ | aes2.\< | c2\mp r4 |
   
   c,8--\p c8~ c2~ | c2. | c2.\fermata
@@ -140,7 +140,7 @@ tenor = \relative c' {
   % Verse I.
   \partial 4 c8\mp( bes8) | a2( c4 | bes2.) | a2( c4 | 
   bes2) a4( | bes2~ bes8 c8 | d4 f4 e4 | e2 c4 | 
-  a8--\< c8~ c2) | d4\<( c4 bes4 | c4 b4\> a4 | f2 g4 |
+  a8--\< c8~ c2) | d4( c4 bes4 | c4 b4\> a4 | f2 g4 |
   a2.\!) \mark \markup { \italic { poco accel. } } | g2 a4 | bes2 a4 | f8 bes8~ bes2\fermata |
   
   \breathe r4 f4~\mf f8 d8 | c2 e4\< | f8 bes8~\! bes2~ | bes2.~ | bes2\> a4 | \!
@@ -201,8 +201,8 @@ tenor = \relative c' {
   c2.~\> | c4.\! r8 c8\mp d8 | f,2 f4 | g2 g4 | f8 a8~ a2~  |  
 
   % Verse IV.
-  a2. | r4 c4\mp a | g8 g8~ g2 | a2 c8 a | d8 e8~ e4 e,4\mf g |
-  a2 g4 | a b d4(\< | c d e | fis4--)\ff fis4\p\> fis4 | 
+  a2. | R2. | r4 c4\mp a | g8 g8~ g2 | a2 c8 a | d8 e8~ e2 | r4 e,4\mf g |
+  a2 g4 | a b d4(\< \mark \markup { \italic { molto allarg. } }  | c d e | fis4--)\ff fis4\p\> fis4 | 
   f?2.~\! | f2. | 
   << {
       f2.~ | f2. | g2 r4 | g,8-- g8~ g2 | f2 f4 | e2.\fermata
@@ -232,7 +232,7 @@ bass = \relative c {
       r4 a4 g4 | f2 f4 | e4~ e2 | d2. |
       d2. | ees2. | ees2. | bes8 d8~ d2 |
       
-      \breathe r4 f d | des8 f8~ f2 | bes8 bes8~ bes2~ | bes2. | a2. |
+      \breathe \break r4 f d | des8 f8~ f2 | bes8 bes8~ bes2~ | bes2. | a2. |
     } \\ {
       % Verse II.
       r4 f d | c f e | d c2 | c2 e4 |
@@ -277,7 +277,7 @@ bass = \relative c {
       a2.~ | a4.) r8 c,8 d8 | a2 a4 | c2 c4 | c2.~ | c2.
       
       % Verse IV.
-      r4 c4 a | g8 g8~ g2 | a2 c8 a | d8 e8~ e4 e4\mf g |
+      R2. | r4 c4 a | g8 g8~ g2 | a2 c8 a | d8 e8~ e2 | r4 e g |
       a2 g4 | a2 gis4 | c2. | c4 c4 c4 |
       c2.~ | c2. | c2.~ | c2. | c2 r4 |
       
@@ -295,8 +295,8 @@ bass = \relative c {
       a2.~\> | a4.\! r8 c,8\mp d8 | d,2 d4 | e2 e4 | f2.
       
       % Verse IV.
-      f2. | r4 c'4\mp a | g8 g8~ g2 | a2 c8 a | d8 e8~ e4 e4 g |
-      a2 g4 | a2 gis4\< | a2. | a4\ff a4\p\> a4 |
+      f2. | R2. | r4 c'4\mp a | g8 g8~ g2 | a2 c8 a | d8 e8~ e2 | r4 e4\mf g |
+      a2 g4 | a2 gis4\< \mark \markup { \italic { molto allarg. } }  | a2. | a4\ff a4\p\> a4 |
       a2.~\! | a2. | aes2.~ | aes2.\< | g2\mp r4 | 
       
       bes,8 bes8~ bes4 bes4 | a4 f a g2.\fermata 
